@@ -17,5 +17,5 @@ jobs:
          - name: Push to Docker Hub
            run: |
               echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-              docker tag myapp:latest myrepo/myapp:latest
-              docker push myrepo/myapp:latest
+              docker tag myapp:latest riteshratti86/myapp:latest
+              docker push riteshratti86/myapp:latest
